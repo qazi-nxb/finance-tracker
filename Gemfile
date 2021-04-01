@@ -23,6 +23,17 @@ gem 'jbuilder', '~> 2.7'
 # gem 'bcrypt', '~> 3.1.7'
 
 gem 'devise'
+gem 'pry', '~> 0.13.1'
+gem 'pry-byebug', '~> 3.4'
+gem 'bootstrap-sass', '~> 3.4.1'
+gem 'jquery-rails'
+gem 'bcrypt', '~> 3.1.7'
+gem 'will_paginate', '~> 3.3'
+gem 'bootstrap-will_paginate', '~> 1.0.0'
+gem 'devise-i18n'
+gem 'devise-bootstrap-views', '~> 1.0'
+gem 'iex-ruby-client'
+gem "font-awesome-rails"
 
 
 # Use Active Storage variant

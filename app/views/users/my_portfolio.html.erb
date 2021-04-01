@@ -1,0 +1,22 @@
+
+<br>
+<h1>Portfolio</h1>
+<br><br>
+<h3>Search Stoks</h3>
+
+<%= form_tag 'search_stock', method: :get do %>
+    <div class="form-group row">
+    <div class="col-sm-9 norp">
+    <%= text_field_tag :stock, params[:stock], placeholder: "ticker sybmol", autofocus: true, class: "form-control form-control-lg"%>
+    
+    </div>
+    <div class="col-sm-3 nolp">
+    <%= button_tag type: :submit , class: "btn btn-success" do %>
+        <%= fa_icon 'search 2x'%>
+    <% end %>
+    </div>
+    </div>
+
+<% end %>
+
+
