@@ -1,0 +1,28 @@
+<% if !@track_stocks.empty?%>
+<div class="row">
+  <div class="col-9">
+
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th scope="col">Ticker</th>
+    <th scope="col">name</th>
+    <th scope="col">Price</th>
+    <th scope="col">Action</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <% @track_stocks.each do |stock| %>
+      <th scope="row"> stock.ticker</th>
+      <td>stock.name</td>
+      <td>stock.last_price</td>
+      <td> action </td>
+    <% end %>
+  </tr>
+  </tbody>
+</table>
+
+  </div>
+</div>
+<% end %>

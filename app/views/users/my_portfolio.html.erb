@@ -4,7 +4,7 @@
 <br><br>
 <h3>Search Stoks</h3>
 
-<%= form_tag 'search_stock', method: :get do %>
+<%= form_tag 'search_stock', remote: true, method: :get do %>
     <div class="form-group row">
     <div class="col-sm-9 norp">
     <%= text_field_tag :stock, params[:stock], placeholder: "ticker sybmol", autofocus: true, class: "form-control form-control-lg"%>
@@ -19,4 +19,8 @@
 
 <% end %>
 
+<div id="result">
 
+</div>
+
+<%= render 'stocks/list' %>
