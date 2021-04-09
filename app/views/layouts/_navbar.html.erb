@@ -11,35 +11,17 @@
           <%= link_to "My Portfolio", my_portfolio_path, class: "nav-link" %>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <%= link_to edit_user_registration_path , class: "nav-link" do %>
+            <%= fa_icon 'edit' %> Edit Profile
+          <% end %>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-
-        <!--            <li class="nav-item dropdown">-->
-        <!--              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
-        <!--                Your Profile <%#= "Admin" %>-->
-        <!--              </a>-->
-        <!--              <div class="dropdown-menu" aria-labelledby="navbarDropdown">-->
-        <%#= link_to 'Show Articles',  class: "dropdown-item" %>
-        <%#= link_to 'Create Article', class: "dropdown-item" %>
-        <!--                <div class="dropdown-divider"></div>-->
-        <%#= link_to 'Logout', method: :delete, class: "dropdown-item" %>
-        <!--              </div>-->
-        <!--            </li>-->
-
 
         <li class="nav-item">
           <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+        <li class="nav-item name">
+          <%= fa_icon 'user' %>
+          <%= current_user.full_name %>
         </li>
         <li class="nav-item logoutpd">
           <%= link_to "Logout", destroy_user_session_path, class: "btn btn-xs btn-danger", method: :delete %>
