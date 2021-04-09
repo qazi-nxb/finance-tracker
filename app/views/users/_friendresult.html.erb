@@ -1,0 +1,14 @@
+<%= render 'layouts/messages' %>
+
+<% if @friend %>
+  <div class="card card-header col-9">
+
+    <strong> Symbol: </strong> <%= @friend%>
+    <strong> Name: </strong> <%= @friend%>
+    <strong> Last Price: </strong> <%= @friend %>
+
+      <%= link_to "Add to friend", # ,
+                  class: "btn btn-xs btn-success col-3", method: :post%>
+
+  </div>
+<% end %>
